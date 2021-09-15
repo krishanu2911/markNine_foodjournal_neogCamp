@@ -9,7 +9,7 @@ const foodDb = {
   CHINESE: [
     { name: "Noodles", stars: "🌟🌟🌟" },
     { name: "Manchurian", stars: "🌟🌟🌟🌟" },
-    { name: "Sushi", stars: "🌟" }
+    { name: "Sushi", stars: "🌟🌟" }
   ],
   ITALIAN: [
     { name: "Pizza", stars: "🌟🌟🌟🌟🌟" },
