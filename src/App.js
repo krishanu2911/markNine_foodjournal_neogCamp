@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import "./styles.css";
 const foodDb = {
   INDIAN: [
-    { name: "PannerMakni", stars: "🌟🌟🌟🌟" },
-    { name: "Khichri", stars: "🌟🌟🌟" },
-    { name: "AlooParata", stars: "🌟🌟🌟🌟🌟" }
+    { name: "PannerMakni", description: "This is amazing", stars: "🌟🌟🌟🌟" },
+    { name: "Khichri", description: "healthy food", stars: "🌟🌟🌟" },
+    { name: "AlooParata", description: "loved it", stars: "🌟🌟🌟🌟🌟" }
   ],
   CHINESE: [
-    { name: "Noodles", stars: "🌟🌟🌟" },
-    { name: "Manchurian", stars: "🌟🌟🌟🌟" },
-    { name: "Sushi", stars: "🌟🌟" }
+    { name: "Noodles", description: "it is so nice", stars: "🌟🌟🌟" },
+    { name: "Manchurian", description: "tastes heaven", stars: "🌟🌟🌟🌟" },
+    { name: "Sushi", description: "non-veg", stars: "🌟🌟" }
   ],
   ITALIAN: [
-    { name: "Pizza", stars: "🌟🌟🌟🌟🌟" },
-    { name: "Lasagna", stars: "🌟🌟🌟" },
-    { name: "Spaghetti", stars: "🌟🌟🌟🌟" }
+    { name: "Pizza", description: "no words", stars: "🌟🌟🌟🌟🌟" },
+    { name: "Lasagna", description: "ok ok", stars: "🌟🌟🌟" },
+    { name: "Spaghetti", description: "nice", stars: "🌟🌟🌟🌟" }
   ]
 };
 
@@ -116,6 +116,7 @@ export default function App() {
                     {food.name}
                   </span>
                 </div>
+                <div>{food.description}</div>
                 <div>
                   <span
                     style={{
